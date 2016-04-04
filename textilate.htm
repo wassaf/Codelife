@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Textillate.js</title>
+    <link href="animated.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .tlt
+        {
+            color: #FF9999;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 10px 0 10px 0;
+            display: inline-block;
+            vertical-align: middle;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .tlt2
+        {
+		
+            color: #FF9999;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 0px 0 10px 0;
+            display: inline-block;
+            vertical-align: middle;
+            display: block;
+            text-align: center; /*visibility: hidden;*/
+            width: 100%;
+        }
+        
+        
+        .highlight
+        {
+           margin-top:200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="highlight">
+        <h1 class="tlt">
+            <ul class="texts" style="display: none">
+                <li>Gliding is the most beautiful and absorbing way of flying. </li>
+                <li>Gliding is an affordable way to take to the skies, especially when you consider the cost to hire powered aircraft.  </li>
+                <li>Looking for something more?</li>
+            </ul>
+        </h1>
+        <h2 class="tlt2">
+            <ul class="texts">
+                <li>Gliding also promotes ‘Green Aviation’ and is extremely environment friendly</li>
+                <li>Mangalore Gliding Club shall serve as a platform for aero sport and recreational activities.</li>
+                <li>Subscribe to our mailing list to receive an</li>
+            </ul>
+        </h2>
+    </div>
+
+    <br />
+
+   
+   
+   
+
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jquery.textillate.js" type="text/javascript"></script>
+    <script src="jquery.lettering.js" type="text/javascript"></script>
+    <script src="jquery.fittext.js" type="text/javascript"></script>
+    <script type="text/javascript">
+         $( document ).ready(function() {
+             $('.tlt').textillate({
+              minDisplayTime: 1800, 
+       in: {
+           effect: 'fadeInLeftBig',
+                     delayScale: 2,                     
+                     delay: 50,                     
+                     sync: true,
+                     shuffle: true
+
+       },
+       out: {
+             effect: 'hinge',             
+             shuffle: true,
+             sync: true
+       },
+       loop: true
+       });
+       
+     });
+    </script>
+    <script type="text/javascript">
+         $( document ).ready(function() {
+             $('.tlt2').textillate({
+              minDisplayTime: 1800, 
+       in: {
+           effect: 'fadeInRightBig',
+                     delayScale: 2,                                   
+                     delay: 50,
+                     sync: true,
+                     shuffle: true
+
+       },
+       out: {
+             effect: 'fadeOutLeftBig',             
+             shuffle: true,
+             sync: true
+       },
+       loop: true
+       });       
+     });
+    </script>
+</body>
+</html>
